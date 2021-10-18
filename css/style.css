@@ -1,0 +1,213 @@
+body{
+    background-image: url("asset/flagg.jpeg");
+}
+.main-page{
+    min-height: 100%;
+    background-size: cover;
+}
+        
+.play-btn{
+    margin: 0;
+    position: absolute;
+    top: 65%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 57%;
+    padding: 10px 30px;
+    font-size: larger;
+    border-radius: 5pt;
+    display: block;
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.play-btn:hover, .gallery-btn:hover{
+    background-color:lightskyblue;
+    opacity: 80%;
+    box-shadow: 0 0 5px 0.5px;
+}           
+    
+.gallery-btn{
+    margin: 0;
+    position: absolute;
+    top: 65%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 30%;
+    padding: 10px 30px;
+    font-size: larger;
+    border-radius: 5pt;
+    display: block;
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+    font-weight:900;
+}
+/* css for game page */
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --hue-neutral: 190;
+    --hue-correct: 120;
+    --hue-wrong: 355;
+}
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #394bbf;
+}
+#info{
+    list-style: none;
+    font-weight: bold;
+    padding-bottom: 20pt;
+    text-align: justify;
+    padding-right: 25pt;
+    padding-left: 20pt;
+}
+#info-content{
+    color: #394bbf;
+}
+
+#info{
+    animation-name: info;
+    animation-duration: 4s;
+    position: relative;
+}
+@keyframes info {
+    0%   { left:0px; }
+    25%  { left:40px; }
+    50%  { left:0px; }
+}
+
+#score{
+    font-weight: bolder;
+    font-size: 1.3rem;
+    text-align: center;
+}
+#right{
+    font-weight: bolder;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.logo{
+    width: 200pt;
+    height: 200pt;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10pt;
+  border-radius: 50%;
+}
+#flag{
+    box-shadow: 0 0 10px 0.5px;
+    width: 200pt;
+    height: 100pt;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+}
+.container{
+    width: 800px;
+    max-width: 80%;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 40px 1px;
+    padding-bottom: 20px;
+}
+#back{
+    font-weight: bold;
+    padding-left: 10pt;
+    padding-top: 5pt;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#question{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0
+}
+.diff-btn{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+    margin: 20px 100px;
+}
+
+.btn{
+    --hue: var(--hue-neutral);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border: 1px solid hsl(var(--hue), 100%, 20%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover{
+    border-color:black ;
+    background-color:cornflowerblue;
+    opacity: 80%;
+    box-shadow: 0 0 5px 0.5px;
+}
+
+.block {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    }
+
+.btn.correct{
+    --hue: var(--hue-correct);
+}
+.btn.wrong{
+    --hue: var(--hue-wrong);
+}
+h2, h3{
+    text-align: center;
+    font-weight: bolder;
+}
+.start-btn, .finish-btn, .next-btn, .main-btn{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px 10px; 
+}
+.next-btn{
+    margin-left: 80%;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide{
+    display: none;
+}
