@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Flag Expert</title>
+    <link rel="icon" href="asset/flag.png">
+    <style>
+      body{
+        background-image: url("asset/flagg.jpeg");
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="back"><a href="main.html">BACK</a></div>
+      <img src="asset/flag.png" class="logo" id="logo" />
+      <div class="title-container">
+        <h2>Quiz Tebak Bendera Negara (Mode Mudah)</h2>
+      </div>
+      <div id="question-container" class="hide">
+        <div id="question">Question</div>
+        <img id="flag" class="hide" />
+
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn">A</button>
+          <button class="btn">B</button>
+          <button class="btn">C</button>
+          <button class="btn">D</button>
+        </div>
+      </div>
+      <div class="finish-display">
+        <div id="right" class="hide">Anda benar 1 dari 12 soal</div>
+        <div id="score" class="hide">Skor anda: 500/500</div>
+        <div id="info" class="hide"> 
+          <li>
+            <ul>
+              Fakta Menarik:
+            </ul>
+            <ul id="info-content">
+              Hewan purba Komodo hanya bisa ditemukan di Indonesia, tepatnya di
+              pulau Komodo, Nusa Tenggara Timur.
+            </ul>
+          </li>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="start-btn" class="start-btn btn">START</button>
+        <button id="finish-btn" class="finish-btn btn hide">Selesai</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+        <a href="main.html"><button id="main-btn" class="main-btn btn hide">
+          Kembali
+        </button>
+        </a>
+      </div>
+    </div>
+    <script src="js/script_easy.js"></script>
+  </body>
+</html>
